@@ -1,15 +1,16 @@
 import React from 'react';
+import { useReq } from '../renderer';
 
-interface Props {
-  method: string;
-  path: string;
-}
+export function Index() {
+  const req = useReq();
 
-export function Index(props: Props) {
   return (
     <div>
       <h1>Hello, world!</h1>
-      <pre>{JSON.stringify(props, null, 2)}</pre>
+      <pre>
+        Method: {req.method} {'\n'}
+        Path: {req.path}
+      </pre>
       <hr />
       <p>This page was rendered at {new Date().toUTCString()}</p>
     </div>
