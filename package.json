@@ -1,0 +1,8 @@
+{
+  "name": "@lffg/express-react-views",
+  "private": true,
+  "version": "0.0.0",
+  "repository": "https://github.com/lffg/express-react-views",
+  "author": "Luiz Felipe Gonçalves <https://luizfelipe.dev>",
+  "license": "MIT"
+}
