@@ -1,8 +1,10 @@
 import React from 'react';
-import { useReq } from '../renderer';
+import { useExpressContext } from '../renderer';
 
 export function Index() {
-  const req = useReq();
+  const { req, res } = useExpressContext();
+
+  res.setHeader('X-Set-By-React', 'true');
 
   return (
     <div>

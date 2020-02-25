@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 const app = express();
 
 app.get('/', (req, res) => {
-  render(req, <Index />).pipe(res);
+  render({ req, res }, <Index />).pipe(res);
 });
 
 app.listen(port, () => console.log(`Server at http://localhost:${port}`));
